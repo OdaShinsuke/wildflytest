@@ -64,6 +64,15 @@
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <systemProperties>
+            <wildfly.home>E:/wildfly-8.1.0.Final</wildfly.home>
+          </systemProperties>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
