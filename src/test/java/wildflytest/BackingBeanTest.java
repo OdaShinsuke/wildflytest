@@ -25,6 +25,6 @@ public class BackingBeanTest {
   @Deployment
   public static WebArchive createDeployment() {
       return ShrinkWrap.create(WebArchive.class)
-              .addClasses(BackingBean.class);
+              .addClasses(BackingBean.class, Logic.class);
   }
 }
